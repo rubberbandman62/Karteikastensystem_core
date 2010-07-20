@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iksCore
+Bundle-SymbolicName: com.iks.hto.karteikastensystem.core
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.iks.hto.karteikastensystem.core.internal.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.edit
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: com.iks.hto.karteikastensystem.core,
+ com.iks.hto.karteikastensystem.core.internal.xmi
+Service-Component: META-INF/KarteikastenSystemLoadService.xml, META-INF/xmiprovider.xml
+Import-Package: com.iks.hto.karteikastensystem.core.model.karteikastensystem
+

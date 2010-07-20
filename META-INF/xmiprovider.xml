@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="xmiprovider">
+   <implementation class="com.iks.hto.karteikastensystem.core.internal.xmi.XMIKarteikastenSystemResourceProvider"/>
+   <service>
+      <provide interface="com.iks.hto.karteikastensystem.core.IKarteikastenSystemResourceProvider"/>
+   </service>
+</scr:component>

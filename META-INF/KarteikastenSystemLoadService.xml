@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="KarteikastenSystemLoadService">
+   <implementation class="com.iks.hto.karteikastensystem.core.internal.KarteikastenSystemResourceComponent"/>
+   <reference bind="addProvider" cardinality="0..n" interface="com.iks.hto.karteikastensystem.core.IKarteikastenSystemResourceProvider" name="IKarteikastenSystemResourceProvider" policy="dynamic" unbind="removeProvider"/>
+   <service>
+      <provide interface="com.iks.hto.karteikastensystem.core.IKarteikastenSystemLoadingService"/>
+   </service>
+</scr:component>
